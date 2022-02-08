@@ -1,7 +1,7 @@
 FROM jupyter/scipy-notebook:ubuntu-20.04
 
 # mamba installを使いたかったがdatalad pushに失敗するため
-# conda installを利用している（2/2時点未検証）
+# conda installを利用している（2/2時点）
 RUN conda install --quiet --yes git-annex==8.20210903 \
     && conda install --quiet --yes git==2.35.0 \
     && conda install --quiet --yes datalad==0.15.4 \
