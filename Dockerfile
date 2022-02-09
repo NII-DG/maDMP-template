@@ -1,5 +1,12 @@
 FROM jupyter/scipy-notebook:ubuntu-20.04
 
+# install netbase
+USER root
+RUN apt update -y \
+    && apt install -y netbase \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
 # mamba installを使いたかったがdatalad pushに失敗するため
 # conda installを利用している（2/2時点）
 RUN conda install --quiet --yes git-annex==8.20210903 \
