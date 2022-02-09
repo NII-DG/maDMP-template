@@ -36,6 +36,11 @@ RUN mkdir ${HOME}/.fonts \
     && rm -rf ${HOME}/.fonts/etc ${HOME}/.fonts/usr \
     && rm .wget-hsts
 
+#install netbase
+USER root
+RUN sudo apt update -y \
+    && sudo apt install -y netbase
+
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 
