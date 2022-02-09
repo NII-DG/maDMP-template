@@ -1,7 +1,14 @@
 FROM jupyter/scipy-notebook:ubuntu-20.04
 
+# install netbase
+USER root
+RUN apt update -y \
+    && apt install -y netbase \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
 # mamba installを使いたかったがdatalad pushに失敗するため
-# conda installを利用している（2/2時点）
+# conda installを利用している（2/2時点未検証）
 RUN conda install --quiet --yes git-annex==8.20210903 \
     && conda install --quiet --yes git==2.35.0 \
     && conda install --quiet --yes datalad==0.15.4 \
@@ -35,11 +42,6 @@ RUN mkdir ${HOME}/.fonts \
     && rm ${HOME}/.fonts/${font_deb} \
     && rm -rf ${HOME}/.fonts/etc ${HOME}/.fonts/usr \
     && rm .wget-hsts
-
-#install netbase
-USER root
-RUN sudo apt update -y \
-    && sudo apt install -y netbase
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
