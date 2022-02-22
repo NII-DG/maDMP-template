@@ -13,6 +13,17 @@
         "neuro"
       ]
     },
+    "dataSize": {
+      "type": "string",
+      "enum": [
+        "10MB",
+        "100MB",
+        "1GB",
+        "100GB",
+        "1TB",
+        "1PB"
+      ]
+    },
     "createDate": {
       "type": "string"
     },
