@@ -24,6 +24,14 @@
         "1PB"
       ]
     },
+    "datasetStructure": {
+      "type": "string",
+      "enum": [
+        "RCOS_with_code",
+        "RCOS_only_data",
+        "YODA"
+      ]
+    },
     "createDate": {
       "type": "string"
     },
