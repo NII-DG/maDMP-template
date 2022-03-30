@@ -38,6 +38,13 @@
         "YODA"
       ]
     },
+    "backupLocation": {
+      "type":"string",
+      "enum": [
+        "AmasonS3",
+        "Local"
+      ]
+    },
     "dmpType": {
       "type": "string",
       "enum": [
