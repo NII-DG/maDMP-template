@@ -8,7 +8,8 @@
       "enum": [
         "meti",
         "amed",
-        "jst"
+        "jst",
+        "sample"
       ]
     },
     "field": {
