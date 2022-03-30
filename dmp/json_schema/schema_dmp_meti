@@ -39,7 +39,7 @@
       ]
     },
     "backupLocation": {
-      "type":"string",
+      "type": "string",
       "enum": [
         "AmasonS3",
         "Local"
