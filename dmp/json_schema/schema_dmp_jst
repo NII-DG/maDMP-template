@@ -32,6 +32,13 @@
         "YODA"
       ]
     },
+    "backupLocation": {
+      "type":"string",
+      "enum": [
+        "AmasonS3",
+        "Local"
+      ]
+    },
     "createDate": {
       "type": "string"
     },
