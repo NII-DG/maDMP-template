@@ -32,6 +32,13 @@
         "YODA"
       ]
     },
+    "useDocker": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
     "createDate": {
       "type": "string"
     },
