@@ -1,17 +1,22 @@
 FROM cschranz/gpu-jupyter:v1.4_cuda-11.2_ubuntu-20.04_python-only
 
-# install netbase
 USER root
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 RUN apt update -y \
     && apt install -y netbase \
-	&& apt-get clean \
-	&& rm -rf /var/lib/apt/lists/*
+    && apt install -y graphviz \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
+USER ${NB_USER}
 # mamba installを使いたかったがdatalad pushに失敗するため
 # conda installを利用している（2/2時点）
 RUN conda install --quiet --yes git-annex==8.20210903 \
     && conda install --quiet --yes git==2.35.0 \
     && conda install --quiet --yes datalad==0.15.4 \
+    # 依存関係の修正
+    && conda install --quiet --yes chardet==4.0.0 \
     && conda clean -i -t -y
 
 # install the notebook package etc.
@@ -25,13 +30,15 @@ RUN pip install --no-cache --upgrade pip \
     && pip install --no-cache blockdiag==3.0.0 \
     && pip install --no-cache -U nbformat==5.2.0 \
     && pip install --no-cache papermill==2.3.3 \
-    && pip install --no-cache black==21.12b0
+    && pip install --no-cache black==21.12b0 \
+    && pip install --no-cache snakemake
 
 RUN jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
     && jupyter run-through quick-setup --user \
     && jupyter nbextension install --py lc_multi_outputs --user \
     && jupyter nbextension enable --py lc_multi_outputs --user
+
 
 # install Japanese-font (for blockdiag)
 ARG font_deb=fonts-ipafont-gothic_00303-18ubuntu1_all.deb
