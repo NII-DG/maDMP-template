@@ -38,6 +38,13 @@
         "YODA"
       ]
     },
+    "useDocker": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
     "dmpType": {
       "type": "string",
       "enum": [
