@@ -35,7 +35,7 @@
       "enum": [
         "RCOS_with_code",
         "RCOS_only_data",
-        "YODA"
+        "RCOS_for_parameters"
       ]
     },
     "useDocker": {

@@ -2,4 +2,4 @@
     "field": "---",
     "dataSize": "---",
     "datasetStructure": "RCOS_with_code",
-    "useDocker": "---",
+    "useDocker": "YES",
