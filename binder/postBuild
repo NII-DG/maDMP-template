@@ -15,6 +15,7 @@
 	pip install nbformat==5.2.0
 	pip install black==21.12b0
 	pip install snakemake
+	pip install boto3
 
 	# 拡張機能のインストール
 	pip install jupyter_contrib_nbextensions
