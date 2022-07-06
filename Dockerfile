@@ -63,7 +63,19 @@ COPY . ${HOME}
 
 USER root
 RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
 
+
+##### User Custom Area [Start] ######
+# Dockerfileを編集する場合は、「User Custom Area」内に記述してください。
+# それ以外の記述は書き換えないでください。ワークフロー機能が正常に働かなくなる可能性があります。
+# root権限で実行したい場合は、"USER root"を、一般ユーザ権限で実行したい場合は、 "USER ${NB_USER}"を
+# 実行したいコマンド前に記述してください。
+
+
+
+
+###### User Custom Area [End] #######
+
+USER ${NB_USER}
 # Specify the default command to run
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
