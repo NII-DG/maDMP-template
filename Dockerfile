@@ -31,7 +31,8 @@ RUN pip install --no-cache --upgrade pip \
     && pip install --no-cache -U nbformat==5.2.0 \
     && pip install --no-cache papermill==2.3.3 \
     && pip install --no-cache black==21.12b0 \
-    && pip install --no-cache snakemake
+    && pip install --no-cache snakemake \
+    && pip install --no-cache boto3
 
 RUN jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
