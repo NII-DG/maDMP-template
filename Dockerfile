@@ -28,7 +28,8 @@ RUN pip install --no-cache --upgrade pip \
     && pip install --no-cache black==21.12b0 \
     && pip install --no-cache snakemake \
     && pip install --no-cache boto3 \
-    && pip install --no-cache chardet==4.0.0
+    && pip install --no-cache chardet==4.0.0 \
+    && pip install --no-cache panel==0.13.1
 
 RUN jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
