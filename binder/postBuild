@@ -8,7 +8,6 @@ conda install git=2.35.0 -n notebook
 
 pip install --upgrade pip
 pip install notebook
-pip install papermill==2.3.3
 pip install blockdiag==3.0.0
 pip install lxml==4.7.1
 pip install nbformat==5.2.0
