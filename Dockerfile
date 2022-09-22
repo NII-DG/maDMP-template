@@ -20,7 +20,7 @@ RUN pip install --no-cache --upgrade pip \
     && pip install --no-cache jupyter_contrib_nbextensions \
     && pip install --no-cache git+https://github.com/NII-cloud-operation/Jupyter-LC_run_through \
     && pip install --no-cache git+https://github.com/NII-cloud-operation/Jupyter-multi_outputs \
-    && pip install --no-cache datalad==0.15.4 \
+    && pip install --no-cache datalad==0.17.6 \
     && pip install --no-cache lxml==4.7.1 \
     && pip install --no-cache blockdiag==3.0.0 \
     && pip install --no-cache -U nbformat==5.2.0 \
