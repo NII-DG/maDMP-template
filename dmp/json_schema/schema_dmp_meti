@@ -34,7 +34,6 @@
       "type": "string",
       "enum": [
         "with_code",
-        "only_data",
         "for_parameters"
       ]
     },
