@@ -33,9 +33,8 @@
     "datasetStructure": {
       "type": "string",
       "enum": [
-        "RCOS_with_code",
-        "RCOS_only_data",
-        "RCOS_for_parameters"
+        "with_code",
+        "for_parameters"
       ]
     },
     "useDocker": {
