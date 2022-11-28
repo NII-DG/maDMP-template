@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "schema": {
-        "type": "string"
+      "type": "string"
     },
     "field": {
       "type": "string",
@@ -98,7 +98,7 @@
     "dataPolicy": {
       "type": "string"
     },
-    "accessRights" {
+    "accessRights": {
       "type": "string",
       "enum": [
         "公開 (open access)",
