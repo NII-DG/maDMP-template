@@ -24,33 +24,5 @@
         "TEL": "00-000-0000",
         "eMail": "user@example.com"
     },
-    "remarks": "",
-    "researches": [
-        {
-            "index": 1,
-            "title": "The Research Data",
-            "description": "This is description.",
-            "manager": "John Doe",
-            "dataType": "My Data",
-            "releaseLevel": 4,
-            "concealReason": "nothing",
-            "concealPeriod": "",
-            "acquirer": "John Lab",
-            "acquireMethod": "by download link",
-            "remarks": ""
-        },
-        {
-            "index": 2,
-            "title": "The Research Data2",
-            "description": "This is description.",
-            "manager": "Jumpei Kuwata",
-            "dataType": "My Data",
-            "releaseLevel": 4,
-            "concealReason": "nothing",
-            "concealPeriod": "",
-            "acquirer": "IVIS Lab",
-            "acquireMethod": "by download link",
-            "remarks": ""
-        }
-    ]
+    "remarks": ""
 }
