@@ -15,14 +15,42 @@
     "repositoryInformation": "〇〇大学学術機関リポジトリ",
     "repositoryURL": "",
     "creatorName": "John Doe",
-    "eRadCreatorIdentifer": "",
+    "eRadCreatorIdentifer": ""
     "hostingInstitution": "",
     "dataManager": "John Doe",
     "eRadManagerIdentifer": "",
     "dataManagerContact": {
         "affiliation": "〇〇研究所〇〇部門〇〇課",
         "TEL": "00-000-0000",
-        "eMail": "user@example.com",
+        "eMail": "user@example.com"
     },
-    "remarks": ""
+    "remarks": "",
+    "researches": [
+        {
+            "index": 1,
+            "title": "The Research Data",
+            "description": "This is description.",
+            "manager": "John Doe",
+            "dataType": "My Data",
+            "releaseLevel": 4,
+            "concealReason": "nothing",
+            "concealPeriod": "",
+            "acquirer": "John Lab",
+            "acquireMethod": "by download link",
+            "remarks": ""
+        },
+        {
+            "index": 2,
+            "title": "The Research Data2",
+            "description": "This is description.",
+            "manager": "Jumpei Kuwata",
+            "dataType": "My Data",
+            "releaseLevel": 4,
+            "concealReason": "nothing",
+            "concealPeriod": "",
+            "acquirer": "IVIS Lab",
+            "acquireMethod": "by download link",
+            "remarks": ""
+        }
+    ]
 }
