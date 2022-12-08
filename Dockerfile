@@ -37,7 +37,7 @@ RUN jupyter nbextension install --py lc_multi_outputs --user
 RUN jupyter nbextension enable --py lc_multi_outputs --user
 
 # upgrade nbclassic ( after nbextension installed )
-RUN pip install --no-cache nbclassic==0.4.8
+RUN pip install --no-cache nbclassic==0.4.4
 
 # install Japanese-font (for blockdiag)
 ARG font_deb=fonts-ipafont-gothic_00303-18ubuntu1_all.deb
