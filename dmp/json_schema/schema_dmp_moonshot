@@ -48,13 +48,7 @@
         "BRAIN"
       ]
     },
-    "eRadProjectID": {
-      "type": "string"
-    },
     "projectName": {
-      "type": "string"
-    },
-    "dataNo": {
       "type": "string"
     },
     "dataTitle": {
@@ -118,9 +112,6 @@
       "type": "string"
     },
     "creatorName": {
-      "type": "string"
-    },
-    "eRadCreatorIdentifer": {
       "type": "string"
     },
     "hostingInstitution": {
