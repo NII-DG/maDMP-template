@@ -45,7 +45,7 @@
         "JST",
         "NEDO",
         "AMED",
-        "BEAIN"
+        "BRAIN"
       ]
     },
     "eRadProjectID": {
@@ -133,7 +133,18 @@
       "type": "string"
     },
     "dataManagerContact": {
-      "type": "string"
+      "type": "object",
+      "properties": {
+        "affiliation": {
+          "type": "string"
+        },
+        "TEL": {
+          "type": "string"
+        },
+        "eMail": {
+          "type": "string"
+        }
+      }
     },
     "remarks": {
       "type": "string"
