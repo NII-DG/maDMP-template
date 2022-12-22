@@ -45,16 +45,10 @@
         "JST",
         "NEDO",
         "AMED",
-        "BEAIN"
+        "BRAIN"
       ]
     },
-    "eRadProjectID": {
-      "type": "string"
-    },
     "projectName": {
-      "type": "string"
-    },
-    "dataNo": {
       "type": "string"
     },
     "dataTitle": {
@@ -120,9 +114,6 @@
     "creatorName": {
       "type": "string"
     },
-    "eRadCreatorIdentifer": {
-      "type": "string"
-    },
     "hostingInstitution": {
       "type": "string"
     },
@@ -133,7 +124,18 @@
       "type": "string"
     },
     "dataManagerContact": {
-      "type": "string"
+      "type": "object",
+      "properties": {
+        "affiliation": {
+          "type": "string"
+        },
+        "TEL": {
+          "type": "string"
+        },
+        "eMail": {
+          "type": "string"
+        }
+      }
     },
     "remarks": {
       "type": "string"
