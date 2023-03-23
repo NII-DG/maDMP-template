@@ -4,6 +4,7 @@ USER root
 RUN apt-get update -y
 RUN apt-get install -y netbase
 RUN apt-get install -y graphviz
+RUN apt-get install -y libmagic1
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -29,6 +30,7 @@ RUN pip install --no-cache snakemake
 RUN pip install --no-cache boto3
 RUN pip install --no-cache chardet==4.0.0
 RUN pip install --no-cache panel==0.13.1
+RUN pip install --no-cache python-magic==0.4.27
 
 RUN jupyter contrib nbextension install --user
 RUN jupyter nbextensions_configurator enable --user
