@@ -5,7 +5,7 @@
     "schema": {
       "type": "string"
     },
-    "field": {
+    "workflowIdentifier": {
       "type": "string",
       "enum": [
         "basic",
@@ -13,12 +13,11 @@
         "neuro"
       ]
     },
-    "dataSize": {
+    "contentSize": {
       "type": "string",
       "enum": [
-        "10MB",
-        "100MB",
         "1GB",
+        "10GB",
         "100GB",
         "1TB",
         "1PB"
