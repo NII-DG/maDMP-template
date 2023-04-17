@@ -31,7 +31,13 @@
         "for_parameters"
       ]
     },
-    "useDocker": "YES",
+    "useDocker": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
     "funder": {
       "type": "string",
       "enum": [
