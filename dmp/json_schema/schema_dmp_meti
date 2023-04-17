@@ -36,7 +36,12 @@
         "for_parameters"
       ]
     },
-    "useDocker": "YES",
+    "useDocker": {
+      "type": "string",
+      "enum": [
+        "YES"
+      ]
+    },
     "dmpType": {
       "type": "string",
       "enum": [
