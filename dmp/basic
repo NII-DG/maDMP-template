@@ -1,5 +1,4 @@
 {
     "workflowIdentifier": "---",
     "contentSize": "---",
-    "datasetStructure": "with_code",
-    "useDocker": "---",
+    "datasetStructure": "with_code"
