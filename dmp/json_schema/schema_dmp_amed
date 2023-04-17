@@ -30,12 +30,7 @@
         "for_parameters"
       ]
     },
-    "useDocker": {
-      "type": "string",
-      "enum": [
-        "YES"
-      ]
-    },
+    "useDocker": "YES",
     "createDate": {
       "type": "string"
     },
