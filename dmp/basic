@@ -2,4 +2,4 @@
     "workflowIdentifier": "---",
     "contentSize": "---",
     "datasetStructure": "with_code",
-    "useDocker": "---",
+    "useDocker": "YES",
