@@ -34,8 +34,7 @@
     "useDocker": {
       "type": "string",
       "enum": [
-        "YES",
-        "NO"
+        "YES"
       ]
     },
     "funder": {
