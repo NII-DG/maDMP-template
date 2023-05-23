@@ -122,11 +122,6 @@
   },
   "required": [
     "schema",
-    "dmpType",
-    "agreementTitle",
-    "agreementDate",
-    "submitDate",
-    "corporateName",
-    "researches"
+    "dmpType"
   ]
 }

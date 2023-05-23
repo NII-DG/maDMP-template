@@ -250,12 +250,6 @@
     }
   },
   "required": [
-    "schema",
-    "createDate",
-    "project",
-    "required",
-    "researches",
-    "forPublication",
-    "researchers"
+    "schema"
   ]
 }
