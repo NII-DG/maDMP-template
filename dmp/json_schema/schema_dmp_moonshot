@@ -40,7 +40,7 @@
     "funder": {
       "type": "string",
       "enum": [
-        "---",
+        "--",
         "JST",
         "NEDO",
         "AMED",
@@ -63,7 +63,7 @@
     "researchField": {
       "type": "string",
       "enum": [
-        "---",
+        "--",
         "ライフサイエンス (Life Science)",
         "情報通信 (Informatics)",
         "環境 (Environmental Science)",
@@ -95,7 +95,7 @@
     "accessRights": {
       "type": "string",
       "enum": [
-        "---",
+        "--",
         "公開 (open access)",
         "共有 (restricted access)",
         "非共有・非公開 (metadata only access)",
