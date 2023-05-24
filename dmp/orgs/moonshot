@@ -8,7 +8,7 @@
     "dataDescription": "〇〇実証においてセンサより撮像したデータであり、道路の画像データ",
     "researchField": "---",
     "dataType": "dataset",
-    "fileSize": "---",
+    "fileSize": "<1GB",
     "dataPolicy": "一定期間後に事業の実施上有益なものに対して有償又は無償で提供を開始。但しデータのクレジット標記を条件とする。なおサンプルデータを公開している。",
     "accessRights": "---",
     "availableDate": "2021-04-26",
