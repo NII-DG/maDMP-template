@@ -261,12 +261,6 @@
     }
   },
   "required": [
-    "schema",
-    "createDate",
-    "amedNumber",
-    "project",
-    "forPublication",
-    "researches",
-    "researchers"
+    "schema"
   ]
 }

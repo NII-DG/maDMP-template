@@ -140,7 +140,6 @@
     }
   },
   "required": [
-    "schema",
-    "projectName"
+    "schema"
   ]
 }
