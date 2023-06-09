@@ -29,6 +29,9 @@ RUN pip install --no-cache boto3
 RUN pip install --no-cache chardet==4.0.0
 RUN pip install --no-cache panel==0.13.1
 RUN pip install --no-cache python-magic==0.4.27
+RUN pip install --no-cache natsort==8.3.1
+RUN pip install --no-cache git+https://github.com/NII-DG/nii-dg.git@230419_8c684da
+RUN pip install --no-cache git+https://github.com/NII-DG/dg-packager.git@master
 
 RUN jupyter contrib nbextension install --user
 RUN jupyter nbextensions_configurator enable --user

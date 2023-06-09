@@ -21,6 +21,7 @@ pip install chardet==4.0.0
 pip install colorama==0.4.5
 pip install panel==0.13.1
 pip install python-magic==0.4.27
+pip install natsort==8.3.1
 
 # 拡張機能のインストール
 pip install jupyter_contrib_nbextensions
