@@ -38,7 +38,7 @@
       "personal": {
         "belongTo": "NII",
         "post": "",
-        "name":"Bill Doe"
+        "name": "Bill Doe"
       }
     },
     "staff": [
