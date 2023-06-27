@@ -1,5 +1,5 @@
 {
-    "workflowIdentifier": "basic",
-    "contentSize": "1GB",
-    "datasetStructure": "with_code",
-    "useDocker": "YES",
+  "workflowIdentifier": "basic",
+  "contentSize": "1GB",
+  "datasetStructure": "with_code",
+  "useDocker": "YES",
