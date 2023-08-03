@@ -33,7 +33,7 @@ pip install git+https://github.com/NII-cloud-operation/Jupyter-LC_run_through
 jupyter run-through quick-setup --user
 
 # Jupyter-multi_outputs
-pip install git+https://github.com/NII-cloud-operation/Jupyter-multi_outputs
+pip install git+https://github.com/NII-DG/dg_Jupyter-multi_outputs.git@feature/add_disablepin_func
 jupyter nbextension install --py lc_multi_outputs --user
 jupyter nbextension enable --py lc_multi_outputs --user
 
